@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Shop</title>
+    <style>
+        a {
+        font-size:14px;
+        font-weight:700
+}
+        .superNav {
+        font-size:13px;
+}
+        .form-control {
+        outline:none !important;
+        box-shadow: none !important;
+}
+        @media screen and (max-width:540px){
+        .centerOnMobile {
+        text-align:center
+}
+}
+        nav {
+display: flex;
+justify-content: center;
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="superNav border-bottom py-2 bg-light">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+            <select class="me-3 border-0 bg-light">
+                <option value="en-us">ES-CL</option>
+            </select>
+            <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@patitasshop.cl</strong></span>
+            <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i> <strong>+569 7896 5678</strong></span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+            <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="contacto.html">Contactanos</a></span>
+            <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Politicas</a></span>
+                </div>
+        </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+        <img src="img/logotienda.png" width="150">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shop me-2"></i> <strong>PATITAS SHOP</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+            <div class="input-group">
+            <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+            <button class="btn btn-warning text-white">Buscar</button>
+            </div>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="ms-auto d-none d-lg-block">
+            <div class="input-group">
+                <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                <button class="btn btn-warning text-white">Buscar</button>
+            </div>
+            </div>
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#testh">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="servicio.html">Servicios</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <img src="img/carrito.png" width="50">
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="carrito.html"><i class="fa-solid fa-cart-shopping me-1"></i> Carrito</a>
+            </li>
+            <img src="img/usuario.png" width="50">
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="login.html"><i class="fa-solid fa-circle-user me-1"></i> Cuenta</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+    
+        <!-- Imagen deslizador -->
+        <div class="carousel-inner">
+        <!-- Imagen uno -->
+        <div class="carousel-item active">
+            <img src="img/alimentos1.jpg" class="d-block w-100" alt="...">
+        </div>
+    
+        <!-- imagen dos -->
+        <div class="carousel-item">
+            <img src="img/alimentos2.jpg" class="d-block w-100" alt="...">
+        </div>
+    
+        <!-- Imagen tres -->
+        <div class="carousel-item">
+            <img src="img/alimentos3.jpg" class="d-block w-100" alt="...">
+        </div>
+    
+        <!-- Imagen cuatro -->
+        <div class="carousel-item">
+            <img src="img/alimentos4.jpg" class="d-block w-100" alt="...">
+        </div>
+    
+        <!-- Imagen cinco -->
+        <div class="carousel-item">
+            <img src="img/alimentos5.jpg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+    
+        <!-- Carrusel -->
+        <section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+    
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        </section>
+    </div>
+    
+<div class="text-left container py-5">
+    <h4 id="testh" class="mt-4 mb-5"><strong>Productos en Tendencia</strong></h4>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="img/productobravery.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">Nuevo</span></h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Bravery Chicken Adult Cat alimento para gato</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Alimento seco para gatos</p>
+            </a>
+            <h6 class="mb-3">$21.990</h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="img/productofitformulaperro.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-success ms-2">Oferta</span></h5>
+                    <h5><span class="badge bg-danger ms-2">-20%</span></h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Fit Formula Adulto alimento para perro</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Alimento seco para perros</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$46.990</s><strong class="ms-2 text-danger">$37.592</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="img/productomazuriave.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-success ms-2">Oferta</span></h5>
+                    <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Small bird diet 1.13KG</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Alimento para aves</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$22.990</s><strong class="ms-2 text-danger">$18.990</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="img/productomazuriconejo.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                    <span class="badge bg-success ms-2">Oferta</span><span
+                        class="badge bg-danger ms-2">-20%</span>
+                    </h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Timothy Rabbit Diet</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Comida para conejos</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$17.990</s><strong class="ms-2 text-danger">$14.392</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="img/productomazuricuyi.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Guinea pig timothy diet 1KG</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Comida para cobaya</p>
+            </a>
+            <h6 class="mb-3">$12.990</h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="img/productopurinaproplan.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                    <span class="badge bg-primary ms-2">Nuevo</span><span
+                        class="badge bg-success ms-2">Oferta</span><span class="badge bg-danger ms-2">-16,91%</span>
+                    </h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Proplan Urinary 7,5 KG</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Alimento seco para gatos</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$70.990</s><strong class="ms-2 text-danger">$59.000</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="img/collarid.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                    <span class="badge bg-success ms-2">Oferta</span><span
+                        class="badge bg-danger ms-2">-20%</span>
+                    </h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Crag - Collar - Sunset</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Accesorio</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$39.588</s><strong class="ms-2 text-danger">$32.990</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="img/bandanaduck.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Bandana Ducklings</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Accesorio</p>
+            </a>
+            <h6 class="mb-3">$8.990</h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="img/correacandy.jpg"
+                class="w-100" />
+            <a href="#!">
+                <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                    <span class="badge bg-primary ms-2">Nuevo</span><span
+                        class="badge bg-success ms-2">Oferta</span><span class="badge bg-danger ms-2">-50%</span>
+                    </h5>
+                </div>
+                </div>
+                <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+            </div>
+            <div class="card-body">
+            <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Zeedog Correa Candy</h5>
+            </a>
+            <a href="" class="text-reset">
+                <p>Accesorio</p>
+            </a>
+            <h6 class="mb-3">
+                <s>$11.990</s><strong class="ms-2 text-danger">$5.995</strong>
+            </h6>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm">Añadir al carrito</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+            </li>
+        </ul>
+        </nav>
+
+
+    <div class="container my-5">
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #7a7a7a"
+                >
+            <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Patitas Shop
+                    </h6>
+                    <p>
+                        Somos una tienda de productos de mascotas que fomenta el cuidado correcto
+                        para una vida saludable y duradera de tu mascota. Contamos con todo lo que
+                        necesites, desde accesorios hasta alimentos, para diversas especies.
+                    </p>
+                </div>
+        
+                <hr class="w-100 clearfix d-md-none" />
+        
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                    <a class="text-white">Alimento para perros</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Alimento para gatos</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Alimento para conejos</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Alimento para roedores</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Alimento para aves</a>
+                    </p>
+                </div>
+        
+                <hr class="w-100 clearfix d-md-none" />
+        
+                <hr class="w-100 clearfix d-md-none" />
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                    <p><i class="fas fa-home mr-3"></i> Av. Salvador Allende 1334, San Miguel, 
+                        Región Metropolitana</p>
+                    <p><i class="fas fa-envelope mr-3"></i>  info@patitasshop.cl</p>
+                    <p><i class="fas fa-phone mr-3"></i>Telefono: +569 7896 5678</p>
+                    <a href="https://wa.me/+56930943043">Whatsapp: +569 3094 3043</a>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+        
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+        
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+        
+                    <!-- Google -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-google"></i
+                    ></a>
+        
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+        
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                </div>
+                </div>
+            </section>
+            </div>
+            <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+            © 2020 Copyright: JaB
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

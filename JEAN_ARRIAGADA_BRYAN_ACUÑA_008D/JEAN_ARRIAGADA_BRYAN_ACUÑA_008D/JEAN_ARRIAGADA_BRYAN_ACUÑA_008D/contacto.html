@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        a { font-size:14px; font-weight:700 }
+        .superNav { font-size:13px; }
+        .form-control { outline:none !important; box-shadow: none !important; }
+        @media screen and (max-width:540px) { .centerOnMobile { text-align:center } }
+        nav { display: flex; justify-content: center; }
+    </style>
+</head>
+<body>
+    <div class="superNav border-bottom py-2 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+                    <select class="me-3 border-0 bg-light">
+                        <option value="en-us">ES-CL</option>
+                    </select>
+                    <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@patitasshop.cl</strong></span>
+                    <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i> <strong>+569 7896 5678</strong></span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+                    <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="contacto.html">Contactanos</a></span>
+                    <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Politicas</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+            <img src="img/logotienda.png" width="150">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shop me-2"></i> <strong>PATITAS SHOP</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls
+html
+Copiar código
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+            <div class="input-group">
+                <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                <button class="btn btn-warning text-white">Buscar</button>
+            </div>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="ms-auto d-none d-lg-block">
+                <div class="input-group">
+                    <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                    <button class="btn btn-warning text-white">Buscar</button>
+                </div>
+            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="index.html #testh">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="servicio.html">Servicios</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <img src="img/carrito.png" width="50">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="carrito.html"><i class="fa-solid fa-cart-shopping me-1"></i> Carrito</a>
+                </li>
+                <img src="img/usuario.png" width="50">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="login.html"><i class="fa-solid fa-circle-user me-1"></i> Cuenta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <form id="contactForm" style="width: 26rem;">
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="name">Nombre</label>
+            <input type="text" id="name" class="form-control" />
+        </div>
+      
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="form-control" />
+        </div>
+      
+        <!-- Pets input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="pets">¿Tienes Mascotas?</label>
+            <input type="text" id="pets" class="form-control" />
+        </div>
+
+        <!-- Subject input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="subject">Asunto o pregunta</label>
+            <input type="text" id="subject" class="form-control" />
+        </div>
+
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="message">Comentarios</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-left mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="sendCopy" checked />
+            <label class="form-check-label" for="sendCopy">Enviar una copia a mi correo</label>
+        </div>
+      
+        <!-- Submit button -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar solicitud</button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">¿Desea enviar la solicitud?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Al enviar la solicitud, la revisará nuestro equipo de contacto de Patitas Shop.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" onclick='enviarFormulario()' class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container my-5">
+    <footer class="text-center text-lg-start text-white" style="background-color: #7a7a7a">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Patitas Shop</h6>
+                        <p>
+                            Somos una tienda de productos de mascotas que fomenta el cuidado correcto
+                            para una vida saludable y duradera de tu mascota. Contamos con todo lo que
+                            necesites, desde accesorios hasta alimentos, para diversas especies.
+                        </p>
+                    </div>
+            
+                    <hr class="w-100 clearfix d-md-none" />
+            
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p><a class="text-white">Alimento para perros</a></p>
+                        <p><a class="text-white">Alimento para gatos</a></p>
+                        <p><a class="text-white">Alimento para conejos</a></p>
+                        <p><a class="text-white">Alimento para roedores</a></p>
+                        <p><a class="text-white">Alimento para aves</a></p>
+                    </div>
+            
+                    <hr class="w-100 clearfix d-md-none" />
+            
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p><i class="fas fa-home mr-3"></i> Av. Salvador Allende 1334, San Miguel, Región Metropolitana</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@patitasshop.cl</p>
+                        <p><i class="fas fa-phone mr-3"></i> Teléfono: +569 7896 5678</p>
+                        <a href="https://wa.me/+56930943043">Whatsapp: +569 3094 3043</a>
+                    </div>
+    
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
+            
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+            
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright: JaB
+        </div>
+    </footer>
+</div>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
